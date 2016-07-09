@@ -1,12 +1,12 @@
 #include<stdio.h>
-typedef struct tmp{
+typedef struct tmptype{
 	int x1;
 	int y1;
 	int x2;
 	int y2;
 }block;
 int main(){
-	int count = 0,map[100][100] = {0};//地图炮大法吧。。。找不到更好的处理方法 
+	int count = 0,map[100][100] = {0};//???????伞????????????????????? 
 	int i,j,k,n;
 	scanf("%d",&n);
 	block blocks[n];
