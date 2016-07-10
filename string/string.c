@@ -30,7 +30,7 @@ int contains(char *S,char *str,int flag){
 	int lenS = strlen(S),lenstr = strlen(str);
 	char *tmp_p = str;
 	char *stmp_p = S;
-	if(flag){//È«×ª»»Îª´óÐ´±È½Ï 
+	if(flag){//å¼€å…³ 
 		char tmp[lenstr + 1];
 		char stmp[lenS + 1];
 	 	tmp_p = strcp(str,tmp);
@@ -49,7 +49,7 @@ int contains(char *S,char *str,int flag){
 		}
 		tmp_p = str;
 	}
-	while(*tmp_p && lenstr > 0){
+	while(*tmp_p && lenstr > lenS){
 		if(lenS <= lenstr--){
 			if(mystrcmp(stmp_p,tmp_p++))return 1;
 		}
@@ -60,7 +60,7 @@ int contains(char *S,char *str,int flag){
 int main(){
 	int flag,i,n;
 	char S[100]; 
-	scanf("%s",&S);
+	scanf("%s",S);
 	scanf("%d",&flag);
 	scanf("%d",&n);
 	string strings[n];
